@@ -36,7 +36,7 @@ coord_equal()+
 geom_path(color="black")
 ```
 
-En este ejemplo estamos usando el nombre de los departamentos como variable categórica en el gráfico. Usted puede combinar los conjuntos de datos de **mapsPERU** con otras variables categóricas o numéricas que desee graficar.
+In this example we are using the name of the departments as a categorical variable in the graph. You can combine the **mapsPERU** data sets with other categorical or numeric variables that you want to plot.
 
 <img src="https://raw.githubusercontent.com/musajajorge/mapsPERU/main/imgs/ex_map_dep_1.png" width="100%" />
 
@@ -58,6 +58,7 @@ geom_path(color="black")+
 geom_text(data=centroids, aes(long, lat, group=NULL, label=DEPARTAMENTO), size=2)
 ```
 
-<img src="https://raw.githubusercontent.com/musajajorge/mapsPERU/main/imgs/ex_map_dep_2.png" width="100%" />
+<img src="imgs/ex_map_dep_2.png" width="100%" />
+
 
 
