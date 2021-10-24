@@ -38,7 +38,7 @@ geom_path(color="black")
 
 In this example we are using the name of the departments as a categorical variable in the graph. You can combine the **mapsPERU** data sets with other categorical or numeric variables that you want to plot.
 
-<img src="https://raw.githubusercontent.com/musajajorge/mapsPERU/main/imgs/ex_map_dep_1.png" width="100%" />
+<img src="imgs/ex_map_dep_1.png" width="100%" />
 
 ### Use departmental boundaries of Peru and centroids in a map with ggplot2
 
