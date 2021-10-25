@@ -18,6 +18,15 @@ library(remotes)
 install_github("musajajorge/mapsPERU")
 ```
 
+## Documentation
+
+The datasets included in this package are:
+- boundaries_DEP: Departmental boundaries of Peru
+- boundaries_REG: Regional boundaries of Peru
+- centroids_DEP: Departmental centroids of Peru
+- centroids_REG: Regional centroids of Peru
+
+
 ## Usage
 
 **mapsPERU** will provide you with departmental or regional boundaries, but you must use ggplot2 to plot the maps.
