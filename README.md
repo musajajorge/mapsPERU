@@ -28,13 +28,7 @@ The datasets included in this package are:
 
 ### Data dictionary
 
-#### boundaries_DEP
-
- \item{long}{dbl longitud del límite departamental}
-#'   \item{lat}{dbl latitud del límite departamental}
-#'   \item{COD_DEPARTAMENTO}{chr Código del departamento}
-#'   \item{DEPARTAMENTO}{chr Nombre del departamento}
-#'   \item{group}{fct identificador de grupo en mapa}
+- boundaries_DEP
 
 | Campo | Tipo | Descripción |
 | --------------- | --------------- | --------------- |
@@ -43,6 +37,17 @@ The datasets included in this package are:
 | COD_DEPARTAMENTO | chr | Código del departamento |
 | DEPARTAMENTO | chr | Nombre del departamento |
 | group | fct | Identificador de grupo en mapa |
+
+- boundaries_REG
+
+| Campo | Tipo | Descripción |
+| --------------- | --------------- | --------------- |
+| long | dbl | Longitud del límite regional |
+| lat | dbl | Latitud del límite regional |
+| COD_REGION | chr | Código de la región |
+| REGION | chr | Nombre de la región |
+| group | fct | Identificador de grupo en mapa |
+
 
 ## Usage
 
