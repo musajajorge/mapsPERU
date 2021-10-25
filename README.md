@@ -26,6 +26,23 @@ The datasets included in this package are:
 - centroids_DEP: Departmental centroids of Peru
 - centroids_REG: Regional centroids of Peru
 
+### Data dictionary
+
+#### boundaries_DEP
+
+ \item{long}{dbl longitud del límite departamental}
+#'   \item{lat}{dbl latitud del límite departamental}
+#'   \item{COD_DEPARTAMENTO}{chr Código del departamento}
+#'   \item{DEPARTAMENTO}{chr Nombre del departamento}
+#'   \item{group}{fct identificador de grupo en mapa}
+
+| Campo | Tipo | Descripción |
+| --------------- | --------------- | --------------- |
+| long | dbl | Longitud del límite departamental |
+| lat | dbl | Latitud del límite departamental |
+| COD_DEPARTAMENTO | chr | Código del departamento |
+| DEPARTAMENTO | chr | Nombre del departamento |
+| group | fct | Identificador de grupo en mapa |
 
 ## Usage
 
