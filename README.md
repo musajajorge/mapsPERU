@@ -30,23 +30,24 @@ The datasets included in this package are:
 
 - boundaries_DEP
 
-| Campo | Tipo | Descripción |
+| Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| long | dbl | Longitud del límite departamental |
-| lat | dbl | Latitud del límite departamental |
-| COD_DEPARTAMENTO | chr | Código del departamento |
-| DEPARTAMENTO | chr | Nombre del departamento |
-| group | fct | Identificador de grupo en mapa |
+| long | dbl | Longitude of the departmental boundary |
+| lat | dbl | Latitude of the departmental boundary |
+| COD_DEPARTAMENTO | chr | Department Code |
+| DEPARTAMENTO | chr | Department name |
+| group | fct | Group identifier on map |
 
 - boundaries_REG
 
-| Campo | Tipo | Descripción |
+| Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| long | dbl | Longitud del límite regional |
-| lat | dbl | Latitud del límite regional |
-| COD_REGION | chr | Código de la región |
-| REGION | chr | Nombre de la región |
-| group | fct | Identificador de grupo en mapa |
+| long | dbl | Longitude of the regional boundary |
+| lat | dbl | Latitude of the regional boundary |
+| COD_REGION | chr | Region Code |
+| REGION | chr | Region name |
+| group | fct | Group identifier on map |
+
 
 
 ## Usage
