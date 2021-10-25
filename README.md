@@ -48,7 +48,25 @@ The datasets included in this package are:
 | REGION | chr | Region name |
 | group | fct | Group identifier on map |
 
+- centroids_DEP
 
+| Column | Type | Description |
+| --------------- | --------------- | --------------- |
+| long | dbl | Longitude of the departmental centroid |
+| lat | dbl | Latitude of the departmental centroid |
+| COD_DEPARTAMENTO | chr | Department Code |
+| DEPARTAMENTO | chr | Department name |
+
+- centroids_REG
+
+| Column | Type | Description |
+| --------------- | --------------- | --------------- |
+| long | dbl | Longitude of the regional centroid |
+| lat | dbl | Latitude of the regional centroid |
+| COD_REGION | chr | Region Code |
+| REGION | chr | Region name |
+
+Note: Officially there is no codification for regions, only for departments. Therefore, the codes 150100 for Metropolitan Lima and 159900 for Lima Provinces should be taken as a reference.
 
 ## Usage
 
