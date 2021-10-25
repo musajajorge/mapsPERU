@@ -26,7 +26,7 @@ install_github("musajajorge/mapsPERU")
 
 ``` r
 library(mapsPERU)
-boundaries <- get_DEP(1)
+boundaries <- boundaries_DEP
 
 library(ggplot2)
 ggplot(data=boundaries)+
@@ -46,8 +46,8 @@ Note that **mapsPERU** also provides geographic information of the centroids, so
 
 ``` r
 library(mapsPERU)
-boundaries <- get_DEP(1)
-centroids <- get_DEP(2)
+boundaries <- boundaries_DEP
+centroids <- centroids_DEP
 
 library(ggplot2)
 ggplot(data=boundaries)+
