@@ -4,6 +4,7 @@
 <!-- badges: start -->
 
 [![Project-Status:Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+https://badges.pufler.dev/visits/musajajorge/mapsPERU
 
 <!-- badges: end -->
 
