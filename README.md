@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![Project-Status:Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-https://badges.pufler.dev/visits/musajajorge/mapsPERU
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 <!-- badges: end -->
 
