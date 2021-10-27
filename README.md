@@ -18,7 +18,14 @@
 
 ## Installation
 
-Install **mapsPERU** with
+Install **mapsPERU** from
+[**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
+
+``` r
+install.packages("mapsPERU")
+```
+
+or install **mapsPERU** with
 
 ``` r
 library(remotes)
