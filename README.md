@@ -9,6 +9,7 @@
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 ![LinuxMint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the2-badge&logo=linux-mint&logoColor=white)
 ![contador](https://img.shields.io/github/watchers/musajajorge/mapsPERU.svg)
+[![Downloads](https://cranlogs.r-pkg.org/badges/mapsPERU)](https://CRAN.R-project.org/package=mapsPERU)
 
 <!-- badges: end -->
 
