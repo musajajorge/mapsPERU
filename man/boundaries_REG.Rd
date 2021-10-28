@@ -7,11 +7,11 @@
 \format{
 dataframe
 \describe{
-  \item{long}{dbl longitud}
-  \item{lat}{dbl latitud}
-  \item{COD_REGION}{chr Código de la región}
-  \item{REGION}{chr Nombre de la región}
-  \item{group}{fct identificador de grupo en mapa}
+  \item{long}{dbl Longitude of the regional boundary}
+  \item{lat}{dbl Latitude of the regional boundary}
+  \item{COD_REGION}{chr Region Code}
+  \item{REGION}{chr Region name}
+  \item{group}{dbl Group identifier on map}
 }
 }
 \usage{

@@ -7,10 +7,11 @@
 \format{
 dataframe
 \describe{
-  \item{long}{dbl longitud del centroide}
-  \item{lat}{dbl latitud del centroide}
-  \item{COD_DEPARTAMENTO}{chr Código del departamento}
-  \item{DEPARTAMENTO}{chr Nombre del departamento}
+  \item{long}{dbl Longitude of the departmental centroid}
+  \item{lat}{dbl Latitude of the departmental centroid}
+  \item{COD_DEPARTAMENTO}{chr Department Code}
+  \item{DEPARTAMENTO}{chr Department name}
+  \item{geometry}{GEOMETRY Geometric object}
 }
 }
 \usage{

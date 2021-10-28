@@ -7,10 +7,11 @@
 \format{
 dataframe
 \describe{
-  \item{long}{dbl longitud del centroide}
-  \item{lat}{dbl latitud del centroide}
-  \item{COD_REGION}{chr Código de la regíón}
-  \item{REGION}{chr Nombre de la regíón}
+  \item{long}{dbl Longitude of the regional centroid}
+  \item{lat}{dbl Latitude of the regional centroid}
+  \item{COD_REGION}{chr Region Code}
+  \item{REGION}{chr Region name}
+  \item{geometry}{GEOMETRY Geometric object}
 }
 }
 \usage{

@@ -7,11 +7,11 @@
 \format{
 dataframe
 \describe{
-  \item{long}{dbl longitud del límite departamental}
-  \item{lat}{dbl latitud del límite departamental}
-  \item{COD_DEPARTAMENTO}{chr Código del departamento}
-  \item{DEPARTAMENTO}{chr Nombre del departamento}
-  \item{group}{fct identificador de grupo en mapa}
+  \item{long}{dbl Longitude of the departmental boundary}
+  \item{lat}{dbl Latitude of the departmental boundary}
+  \item{COD_DEPARTAMENTO}{chr Department Code}
+  \item{DEPARTAMENTO}{chr Department name}
+  \item{group}{dbl Group identifier on map}
 }
 }
 \usage{

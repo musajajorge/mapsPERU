@@ -11,6 +11,7 @@ library(sp)
 library(ggplot2)
 library(tidyverse)
 library(readxl)
+library(sf)
 
 ################################################################################
 
@@ -26,6 +27,16 @@ mapa@data$id <- as.numeric(mapa@data$id)+1
 
 #View(mapa@data)
 glimpse(mapa@data)
+
+#------------------------------------------------------------------------------#
+
+geometria <- st_read("DEPARTAMENTOS.shp")
+geometria <- st_simplify(geometria, dTolerance=100)
+
+object.size(geometria)
+
+geometria$id <- as.numeric(geometria$IDDPTO)
+geometria <- select(geometria, id, geometry)
 
 #------------------------------------------------------------------------------#
 
@@ -54,17 +65,22 @@ boundaries_DEP <- select(puntos, "long","lat","COD_DEPARTAMENTO","DEPARTAMENTO",
 
 boundaries_DEP <- (unique(boundaries_DEP))
 
-boundaries_DEP$long <- round(boundaries_DEP$long, 3)
-boundaries_DEP$lat <- round(boundaries_DEP$lat, 3)
+boundaries_DEP$long <- round(boundaries_DEP$long, 2)
+boundaries_DEP$lat <- round(boundaries_DEP$lat, 2)
+
+boundaries_DEP$group <- as.numeric(boundaries_DEP$group)
 
 glimpse(boundaries_DEP)
 
 #------------------------------------------------------------------------------#
 
 centroids_DEP <- puntos %>%
-  group_by(X1,X2) %>%
+  group_by(X1,X2,id) %>%
   summarise(unique(COD_DEPARTAMENTO),unique(DEPARTAMENTO))
-colnames(centroids_DEP) <- c("long","lat","COD_DEPARTAMENTO","DEPARTAMENTO")
+
+centroids_DEP <- left_join(centroids_DEP, geometria, by="id")
+centroids_DEP <- centroids_DEP[,c(1,2,4,5,6)]
+colnames(centroids_DEP) <- c("long","lat","COD_DEPARTAMENTO","DEPARTAMENTO","geometry")
 centroids_DEP <- arrange(centroids_DEP, COD_DEPARTAMENTO)
 
 glimpse(centroids_DEP)
