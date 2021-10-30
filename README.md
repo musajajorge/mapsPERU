@@ -1,4 +1,5 @@
 
+# logo <img src="imgs/logo_infinito.png" align="right" width="120"/>
 # mapsPERU <img src="imgs/hex_mapsPERU.png" align="right" width="120"/>
 
 <!-- badges: start -->
