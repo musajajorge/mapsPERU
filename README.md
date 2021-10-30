@@ -19,7 +19,7 @@
 
 ## Installation
 
-Install **mapsPERU** version 0.1.2 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
+Install **mapsPERU** version 0.1.3 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
 
 ``` r
 install.packages("mapsPERU")
