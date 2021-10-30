@@ -183,4 +183,6 @@ ggplot(data=boundaries)+
 
 ------------
 
-<img src="imgs/item_infinito.png" align="center" width="40%"/>  
+<p align="center">
+    <img src="imgs/item_infinito.png" width="40%">
+</p>
