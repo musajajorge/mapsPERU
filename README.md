@@ -11,6 +11,7 @@
 [![CRAN-status](https://www.r-pkg.org/badges/version/mapsPERU)](https://CRAN.R-project.org/package=mapsPERU)
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fmusajajorge%2FmapsPERU)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/mapsPERU?color=yellow)](https://CRAN.R-project.org/package=mapsPERU)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5609240.svg)](https://doi.org/10.5281/zenodo.5609240)
 
 <!-- badges: end -->
 
