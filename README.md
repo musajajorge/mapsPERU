@@ -23,9 +23,10 @@ Install **mapsPERU** version 0.1.2 from [**CRAN**](https://CRAN.R-project.org/pa
 ``` r
 install.packages("mapsPERU")
 ```
-<p><small>
+
+<H6>
 Note: Version 0.1.2 does not include geographic information at the district level.
-</small></p>
+</H6>
 
 or install **mapsPERU** version 0.1.4 with
 
