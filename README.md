@@ -1,6 +1,8 @@
 
 # mapsPERU <img src="imgs/hex_mapsPERU.png" align="right" width="120"/>
-# Created by Jorge Musaja, Data Scientist for Social Good <img src="imgs/logo_infinito.png" align="left" width="100"/>
+# Created by Jorge Musaja,
+<img src="imgs/logo_infinito.png" width="100%" />
+# Data Scientist for Social Good
 
 <!-- badges: start -->
 
