@@ -183,5 +183,5 @@ ggplot(data=boundaries)+
 
 ------------
 
-<img src="imgs/logo_infinito.png" align="left" width="100"/>
+<img src="imgs/logo_infinito.png" align="left" width="100"/>  
 ## Created by Jorge Musaja, Data Scientist for Social Good 
