@@ -6,7 +6,7 @@
 \alias{mapsPERU-package}
 \title{mapsPERU: Maps of Peru}
 \description{
-Geographic information of the departmental and regional boundaries of Peru.
+Information of the centroids and geographical limits of the regions, departments and districts of Peru.
 }
 \seealso{
 Useful links:
