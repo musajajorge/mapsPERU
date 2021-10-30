@@ -55,6 +55,18 @@ The datasets included in this package are:
 | DEPARTAMENTO | chr | Department name |
 | group | dbl | Group identifier on map |
 
+- boundaries_DIST
+
+| Column | Type | Description |
+| --------------- | --------------- | --------------- |
+| long | dbl | Longitude of the district boundary |
+| lat | dbl | Latitude of the district boundary |
+| COD_DISTRITO | chr | District Code |
+| DEPARTAMENTO | chr | Department name |
+| PROVINCIA | chr | Province name |
+| DISTRITO | chr | District name |
+| group | dbl | Group identifier on map |
+
 - boundaries_REG
 
 | Column | Type | Description |
@@ -73,6 +85,18 @@ The datasets included in this package are:
 | lat | dbl | Latitude of the departmental centroid |
 | COD_DEPARTAMENTO | chr | Department Code |
 | DEPARTAMENTO | chr | Department name |
+| geometry | GEOMETRY | Geometric object |
+
+- centroids_DIST
+
+| Column | Type | Description |
+| --------------- | --------------- | --------------- |
+| long | dbl | Longitude of the district centroid |
+| lat | dbl | Latitude of the district centroid |
+| COD_DISTRITO | chr | Department Code |
+| DEPARTAMENTO | chr | Department name |
+| PROVINCIA | chr | Province name |
+| DISTRITO | chr | District name |
 | geometry | GEOMETRY | Geometric object |
 
 - centroids_REG
