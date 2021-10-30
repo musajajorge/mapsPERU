@@ -181,6 +181,6 @@ ggplot(data=boundaries)+
 <img src="imgs/ex_map_reg_2.png" width="100%" />
 
 
+------------
 
-# Created by Jorge Musaja Data Scientist for Social Good <img src="imgs/logo_infinito.png" align="center" width="60"/>
-
+# Created by Jorge Musaja Data Scientist for Social Good <img src="imgs/logo_infinito.png" align="center" width="70"/>
