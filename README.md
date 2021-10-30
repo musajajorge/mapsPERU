@@ -173,6 +173,7 @@ ACPS <- c(12364,7001,8615,10302,5015,8632,7507,7909,6843,8412,6950,7182,8363,594
 df <- data.frame(cbind(REGION,ACPS)) 
 df$ACPS <- as.numeric(df$ACPS)
 
+library(sf)
 df <- left_join(df, centroids, by="REGION")
 
 library(ggplot2)
