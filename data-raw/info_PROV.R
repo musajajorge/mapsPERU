@@ -6,8 +6,8 @@ getwd()
 
 ################################################################################
 
-map_DIST <- readRDS("map_DIST.RDS")
+map_PROV <- readRDS("map_PROV.RDS")
 
 ################################################################################
 
-usethis::use_data(map_DIST, overwrite=TRUE)
+usethis::use_data(map_PROV, overwrite=TRUE)

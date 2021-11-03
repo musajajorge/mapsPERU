@@ -6,9 +6,8 @@ getwd()
 
 ################################################################################
 
-boundaries_REG <- readRDS("boundaries_REG.RDS")
-centroids_REG <- readRDS("centroids_REG.RDS")
+map_REG <- readRDS("map_REG.RDS")
 
 ################################################################################
 
-usethis::use_data(boundaries_REG, centroids_REG, overwrite=TRUE)
+usethis::use_data(map_REG, overwrite=TRUE)
