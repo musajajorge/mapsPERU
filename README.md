@@ -16,7 +16,7 @@
 
 <!-- badges: end -->
 
-[**mapsPERU**](https://github.com/musajajorge/mapsPERU/) is a package that provides datasets with information of the centroids and geographical limits of the regions, departments and districts of Peru.
+[**mapsPERU**](https://github.com/musajajorge/mapsPERU/) is a package that provides datasets with information of the centroids and geographical limits of the regions, departments, provinces and districts of Peru.
 
 ## Installation
 
