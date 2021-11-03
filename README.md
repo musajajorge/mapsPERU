@@ -30,7 +30,7 @@ install.packages("mapsPERU")
 Note: Version 0.1.2 does not include geographic information at the district level.
 </H6>
 
-or install **mapsPERU** version 0.1.4 with
+or install **mapsPERU** version 1.0.0 with
 
 ``` r
 library(remotes)
@@ -45,7 +45,7 @@ The datasets included in this package are:
 - map_DIST: Geographic information of the districts of Peru
 - map_REG: Geographic information of the regions of Peru
 
-### Data dictionary
+### Data dictionary (version 1.0.0)
 
 - map_DEP
 
