@@ -40,76 +40,55 @@ install_github("musajajorge/mapsPERU")
 ## Documentation
 
 The datasets included in this package are:
-- boundaries_DEP: Departmental boundaries of Peru
-- boundaries_REG: Regional boundaries of Peru
-- centroids_DEP: Departmental centroids of Peru
-- centroids_REG: Regional centroids of Peru
+- map_DEP: Geographic information of the departments of Peru
+- map_PROV: Geographic information of the provinces of Peru
+- map_DIST: Geographic information of the districts of Peru
+- map_REG: Geographic information of the regions of Peru
 
 ### Data dictionary
 
-- boundaries_DEP
+- map_DEP
 
 | Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| long | dbl | Longitude of the departmental boundary |
-| lat | dbl | Latitude of the departmental boundary |
 | COD_DEPARTAMENTO | chr | Department Code |
 | DEPARTAMENTO | chr | Department name |
-| group | dbl | Group identifier on map |
+| coords_x | dbl | Latitude of the centroid of the department |
+| coords_y | dbl | Longitude of the centroid of the department |
+| geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
-- boundaries_DIST
+- map_PROV
 
 | Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| long | dbl | Longitude of the district boundary |
-| lat | dbl | Latitude of the district boundary |
+| COD_DEPARTAMENTO | chr | Province Code |
+| DEPARTAMENTO | chr | Department name |
+| PROVINCIA | chr | Province name |
+| coords_x | dbl | Latitude of the centroid of the province |
+| coords_y | dbl | Longitude of the centroid of the province |
+| geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
+
+- map_DIST
+
+| Column | Type | Description |
+| --------------- | --------------- | --------------- |
 | COD_DISTRITO | chr | District Code |
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
 | DISTRITO | chr | District name |
-| group | dbl | Group identifier on map |
+| coords_x | dbl | Latitude of the centroid of the district |
+| coords_y | dbl | Longitude of the centroid of the district |
+| geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
-- boundaries_REG
+- map_REG
 
 | Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| long | dbl | Longitude of the regional boundary |
-| lat | dbl | Latitude of the regional boundary |
 | COD_REGION | chr | Region Code |
 | REGION | chr | Region name |
-| group | dbl | Group identifier on map |
-
-- centroids_DEP
-
-| Column | Type | Description |
-| --------------- | --------------- | --------------- |
-| long | dbl | Longitude of the departmental centroid |
-| lat | dbl | Latitude of the departmental centroid |
-| COD_DEPARTAMENTO | chr | Department Code |
-| DEPARTAMENTO | chr | Department name |
-| geometry | GEOMETRY | Geometric object |
-
-- centroids_DIST
-
-| Column | Type | Description |
-| --------------- | --------------- | --------------- |
-| long | dbl | Longitude of the district centroid |
-| lat | dbl | Latitude of the district centroid |
-| COD_DISTRITO | chr | Department Code |
-| DEPARTAMENTO | chr | Department name |
-| PROVINCIA | chr | Province name |
-| DISTRITO | chr | District name |
-| geometry | GEOMETRY | Geometric object |
-
-- centroids_REG
-
-| Column | Type | Description |
-| --------------- | --------------- | --------------- |
-| long | dbl | Longitude of the regional centroid |
-| lat | dbl | Latitude of the regional centroid |
-| COD_REGION | chr | Region Code |
-| REGION | chr | Region name |
-| geometry | GEOMETRY | Geometric object |
+| coords_x | dbl | Latitude of the centroid of the region |
+| coords_y | dbl | Longitude of the centroid of the region |
+| geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
 Note: Officially there is no codification for regions, only for departments. Therefore, the codes 150100 for Metropolitan Lima and 159900 for Lima Provinces should be taken as a reference.
 
