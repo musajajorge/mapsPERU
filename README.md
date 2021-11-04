@@ -150,6 +150,7 @@ ACPS <- data.frame(cbind(REGION,ACPS))
 ACPS$ACPS <- as.numeric(ACPS$ACPS)
 
 library(dplyr)
+library(sf)
 df <- left_join(df, ACPS, by="REGION")
 
 library(ggplot2)
@@ -182,6 +183,84 @@ ggplot(df, aes(geometry=geometry)) +
 
 <img src="imgs/ex_map_reg_2.png" width="100%" />
 
+### Use the provincial dataset in a map with ggplot2
+
+``` r
+library(mapsPERU)
+df <- map_PROV
+
+library(readxl)
+url <- "https://zenodo.org/record/5646444/files/POBLACION_INEI_2021.xlsx?download=1"
+destfile <- "POBLACION_INEI_2021.xlsx"
+curl::curl_download(url, destfile)
+pob <- read_excel(destfile)
+
+library(dplyr)
+pob_prov <- pob %>%
+  group_by(COD_PROVINCIA) %>%
+  summarise(Población = sum(Cantidad))
+
+library(dplyr)
+library(sf)
+df <- left_join(df, pob_prov, by="COD_PROVINCIA")
+
+df$Categoría <- cut(df$Población, right=F, breaks=c(0,100000,500000,1000000,Inf),
+                    labels=c("Menos a 100 mil personas",
+                             "Menos de 500 mil personas",
+                             "Más de 500 mil personas",
+                             "Más de 1 millón de personas"))
+
+
+colores <- c('#feebe2','#fbb4b9','#f768a1','#ae017e')
+
+library(ggplot2)
+ggplot(df, aes(geometry=geometry)) +
+  scale_fill_manual(values=colores)+
+  geom_sf(aes(fill=Categoría)) 
+```
+
+<img src="imgs/ex_map_prov_1.png" width="100%" />
+
+
+### Use the district dataset in a map with ggplot2
+
+``` r
+library(mapsPERU)
+df <- map_DIST
+
+library(readxl)
+url <- "https://zenodo.org/record/5646444/files/POBLACION_INEI_2021.xlsx?download=1"
+destfile <- "POBLACION_INEI_2021.xlsx"
+curl::curl_download(url, destfile)
+pob <- read_excel(destfile)
+
+library(dplyr)
+pob_dist <- pob %>%
+  group_by(COD_DISTRITO) %>%
+  summarise(Cantidad = sum(Cantidad))
+
+library(dplyr)
+library(sf)
+df <- left_join(df, pob_dist, by="COD_DISTRITO")
+
+df$Pob_Group <- ifelse(df$Cantidad<1000, "Menos de 1,000",
+                       ifelse(df$Cantidad<5000, "Menos de 5,000",
+                              ifelse(df$Cantidad<10000, "Menos de 10,000",
+                                     ifelse(df$Cantidad<20000, "Menos de 20,000",
+                                            "Más de 20,000"))))
+
+df$Pob_Group <- factor(df$Pob_Group, levels=c("Menos de 1,000","Menos de 5,000","Menos de 10,000",
+                                              "Menos de 20,000","Más de 20,000"))
+
+colores <- c('#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c')
+
+library(ggplot2)
+ggplot(df, aes(geometry=geometry)) +
+  scale_fill_manual(values=colores)+
+  geom_sf(aes(fill=Pob_Group))
+```
+
+<img src="imgs/ex_map_dist_1.png" width="100%" />
 
 ------------
 
