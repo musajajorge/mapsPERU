@@ -53,8 +53,8 @@ The datasets included in this package are:
 | --------------- | --------------- | --------------- |
 | COD_DEPARTAMENTO | chr | Department Code |
 | DEPARTAMENTO | chr | Department name |
-| coords_x | dbl | Latitude of the centroid of the department |
-| coords_y | dbl | Longitude of the centroid of the department |
+| coords_x | dbl | Longitude of the centroid of the department |
+| coords_y | dbl | Latitude of the centroid of the department |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
 - map_PROV
@@ -64,8 +64,8 @@ The datasets included in this package are:
 | COD_DEPARTAMENTO | chr | Province Code |
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
-| coords_x | dbl | Latitude of the centroid of the province |
-| coords_y | dbl | Longitude of the centroid of the province |
+| coords_x | dbl | Longitude of the centroid of the province |
+| coords_y | dbl | Latitude of the centroid of the province |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
 - map_DIST
@@ -76,8 +76,8 @@ The datasets included in this package are:
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
 | DISTRITO | chr | District name |
-| coords_x | dbl | Latitude of the centroid of the district |
-| coords_y | dbl | Longitude of the centroid of the district |
+| coords_x | dbl | Longitude of the centroid of the district |
+| coords_y | dbl | Latitude of the centroid of the district |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
 - map_REG
@@ -86,8 +86,8 @@ The datasets included in this package are:
 | --------------- | --------------- | --------------- |
 | COD_REGION | chr | Region Code |
 | REGION | chr | Region name |
-| coords_x | dbl | Latitude of the centroid of the region |
-| coords_y | dbl | Longitude of the centroid of the region |
+| coords_x | dbl | Longitude of the centroid of the region |
+| coords_y | dbl | Latitude of the centroid of the region |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
 Note: Officially there is no codification for regions, only for departments. Therefore, the codes 150100 for Metropolitan Lima and 159900 for Lima Provinces should be taken as a reference.
