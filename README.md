@@ -210,7 +210,6 @@ df$Categoría <- cut(df$Población, right=F, breaks=c(0,100000,500000,1000000,In
                              "Más de 500 mil personas",
                              "Más de 1 millón de personas"))
 
-
 colores <- c('#feebe2','#fbb4b9','#f768a1','#ae017e')
 
 library(ggplot2)
@@ -249,8 +248,9 @@ df$Pob_Group <- ifelse(df$Cantidad<1000, "Menos de 1,000",
                                      ifelse(df$Cantidad<20000, "Menos de 20,000",
                                             "Más de 20,000"))))
 
-df$Pob_Group <- factor(df$Pob_Group, levels=c("Menos de 1,000","Menos de 5,000","Menos de 10,000",
-                                              "Menos de 20,000","Más de 20,000"))
+df$Pob_Group <- factor(df$Pob_Group, levels=c("Menos de 1,000","Menos de 5,000",
+                                              "Menos de 10,000","Menos de 20,000",
+                                              "Más de 20,000"))
 
 colores <- c('#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c')
 
