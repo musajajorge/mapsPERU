@@ -94,7 +94,8 @@ Note: Officially there is no codification for regions, only for departments. The
 
 ## Usage
 
-**mapsPERU** will provide you with departmental or regional boundaries, but you must use ggplot2 to plot the maps.
+You do not need to install additional packages to use **mapsPERU** datasets; however, if you want to see the structure of each dataset with *str()* or *dplyr::glimpse()* it is advisable to run *library(sf)* beforehand.
+
 
 ### Use departmental dataset in a map with ggplot2
 
