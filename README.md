@@ -4,6 +4,7 @@
 <!-- badges: start -->
 
 ![errero](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+[![badge infinito](https://github.com/musajajorge/mapsPERU/tree/main/imgs/badge_infinito.png)](https://github.com/musajajorge/mapsPERU/tree/main/imgs/badge_infinito.png)
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Project-Status:Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
