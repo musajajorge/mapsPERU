@@ -4,7 +4,6 @@
 <!-- badges: start -->
 
 ![errero](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-<img src="imgs/logo_infinito.png" width="60"/>
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Project-Status:Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
@@ -13,7 +12,7 @@
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fmusajajorge%2FmapsPERU)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/mapsPERU?color=yellow)](https://CRAN.R-project.org/package=mapsPERU)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5640186.svg)](https://doi.org/10.5281/zenodo.5640186)
-
+<img src="imgs/logo_infinito.png" width="64"/>
 
 <!-- badges: end -->
 
