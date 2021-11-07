@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 ![errero](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-[![badge infinito]<img src="imgs/badge_infinito.png" width="60"/>
+<img src="imgs/badge_infinito.png" width="100"/>
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Project-Status:Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
