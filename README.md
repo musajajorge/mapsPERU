@@ -4,6 +4,7 @@
 <!-- badges: start -->
 
 ![errero](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+<img src="imgs/badge.png" width="50"/>
 <img src="imgs/logo_infinito.png" width="50"/>
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Project-Status:Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
