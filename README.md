@@ -27,7 +27,7 @@ install.packages("mapsPERU")
 ```
 
 <H6>
-Note: Version 0.1.3 does not include geographic information at the district level.
+Note: Version 0.1.3 does not include geographic information at the province level.
 </H6>
 
 or install **mapsPERU** version 1.0.0 with
