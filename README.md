@@ -30,7 +30,7 @@ install.packages("mapsPERU")
 Note: Version 0.1.3 does not include geographic information at the province level.
 </H6>
 
-or install **mapsPERU** version 1.0.0 with
+or install **mapsPERU** version 1.0.1 with
 
 ``` r
 library(remotes)
