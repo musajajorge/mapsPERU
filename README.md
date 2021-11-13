@@ -12,7 +12,7 @@
 [![CRAN-status](https://www.r-pkg.org/badges/version/mapsPERU)](https://CRAN.R-project.org/package=mapsPERU)
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fmusajajorge%2FmapsPERU)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/mapsPERU?color=yellow)](https://CRAN.R-project.org/package=mapsPERU)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5640186.svg)](https://doi.org/10.5281/zenodo.5640186)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5694849.svg)](https://doi.org/10.5281/zenodo.5694849)
 
 <!-- badges: end -->
 
