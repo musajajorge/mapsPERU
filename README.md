@@ -20,7 +20,7 @@
 
 ## Installation
 
-Install **mapsPERU** version 0.1.3 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
+:point_right: Install **mapsPERU** version 0.1.3 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
 
 ``` r
 install.packages("mapsPERU")
@@ -30,14 +30,14 @@ install.packages("mapsPERU")
 Note: Version 0.1.3 does not include geographic information at the district level.
 </H6>
 
-or install **mapsPERU** version 1.0.0 with
+:muscle: or install **mapsPERU** version 1.0.0 with
 
 ``` r
 library(remotes)
 install_github("musajajorge/mapsPERU")
 ```
 
-## Documentation
+## Documentation :file_folder:
 
 The datasets included in this package are:
 - map_DEP: Geographic information of the departments of Peru
