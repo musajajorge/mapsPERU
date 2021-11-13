@@ -18,9 +18,9 @@
 
 [**mapsPERU**](https://github.com/musajajorge/mapsPERU/) is a package that provides datasets with information of the centroids and geographical limits of the regions, departments, provinces and districts of Peru.
 
-## Installation
+## Installation :arrow_double_down:
 
-:point_right: Install **mapsPERU** version 0.1.3 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
+Install **mapsPERU** version 0.1.3 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
 
 ``` r
 install.packages("mapsPERU")
@@ -30,14 +30,14 @@ install.packages("mapsPERU")
 Note: Version 0.1.3 does not include geographic information at the district level.
 </H6>
 
-:muscle: or install **mapsPERU** version 1.0.0 with
+or install **mapsPERU** version 1.0.0 with
 
 ``` r
 library(remotes)
 install_github("musajajorge/mapsPERU")
 ```
 
-## Documentation :file_folder:
+## Documentation :books:
 
 The datasets included in this package are:
 - map_DEP: Geographic information of the departments of Peru
@@ -92,7 +92,7 @@ The datasets included in this package are:
 
 Note: Officially there is no codification for regions, only for departments. Therefore, the codes 150100 for Metropolitan Lima and 159900 for Lima Provinces should be taken as a reference.
 
-## Usage
+## Usage :muscle:
 
 You do not need to install additional packages to use **mapsPERU** datasets; however, if you want to see the structure of each dataset with *str()* or *dplyr::glimpse()* it is advisable to run *library(sf)* beforehand.
 
