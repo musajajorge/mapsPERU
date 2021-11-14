@@ -45,7 +45,7 @@ The datasets included in this package are:
 - map_DIST: Geographic information of the districts of Peru
 - map_REG: Geographic information of the regions of Peru
 
-### Data dictionary (version 1.0.0)
+### Data dictionary (version 1.0.1)
 
 - map_DEP
 
