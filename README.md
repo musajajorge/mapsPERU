@@ -40,10 +40,10 @@ install_github("musajajorge/mapsPERU")
 ## Documentation :books:
 
 The datasets included in this package are:
+- map_REG: Geographic information of the regions of Peru
 - map_DEP: Geographic information of the departments of Peru
 - map_PROV: Geographic information of the provinces of Peru
 - map_DIST: Geographic information of the districts of Peru
-- map_REG: Geographic information of the regions of Peru
 
 ### Data dictionary (version 1.0.1)
 
