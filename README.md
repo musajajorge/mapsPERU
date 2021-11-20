@@ -47,11 +47,21 @@ The datasets included in this package are:
 
 ### Data dictionary (version 1.0.1)
 
+- map_REG
+
+| Column | Type | Description |
+| --------------- | --------------- | --------------- |
+| COD_REGION | chr | Region code |
+| REGION | chr | Region name |
+| coords_x | dbl | Longitude of the centroid of the region |
+| coords_y | dbl | Latitude of the centroid of the region |
+| geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
+
 - map_DEP
 
 | Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| COD_DEPARTAMENTO | chr | Department Code |
+| COD_DEPARTAMENTO | chr | Department code |
 | DEPARTAMENTO | chr | Department name |
 | coords_x | dbl | Longitude of the centroid of the department |
 | coords_y | dbl | Latitude of the centroid of the department |
@@ -61,7 +71,7 @@ The datasets included in this package are:
 
 | Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| COD_DEPARTAMENTO | chr | Province Code |
+| COD_PROVINCIA | chr | Province code |
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
 | coords_x | dbl | Longitude of the centroid of the province |
@@ -72,22 +82,12 @@ The datasets included in this package are:
 
 | Column | Type | Description |
 | --------------- | --------------- | --------------- |
-| COD_DISTRITO | chr | District Code |
+| COD_DISTRITO | chr | District code |
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
 | DISTRITO | chr | District name |
 | coords_x | dbl | Longitude of the centroid of the district |
 | coords_y | dbl | Latitude of the centroid of the district |
-| geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
-
-- map_REG
-
-| Column | Type | Description |
-| --------------- | --------------- | --------------- |
-| COD_REGION | chr | Region Code |
-| REGION | chr | Region name |
-| coords_x | dbl | Longitude of the centroid of the region |
-| coords_y | dbl | Latitude of the centroid of the region |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
 
 Note: Officially there is no codification for regions, only for departments. Therefore, the codes 150100 for Metropolitan Lima and 159900 for Lima Provinces should be taken as a reference.
