@@ -41,7 +41,7 @@ The datasets included in this package are:
 - map_PROV: Geographic information of the provinces of Peru
 - map_DIST: Geographic information of the districts of Peru
 
-### Data dictionary (version 1.0.1)
+### Data dictionary   
 
 - map_REG
 
