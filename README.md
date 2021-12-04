@@ -20,17 +20,13 @@
 
 ## Installation :arrow_double_down:
 
-Install **mapsPERU** version 0.1.3 from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
+Install **mapsPERU** from [**CRAN**](https://CRAN.R-project.org/package=mapsPERU):
 
 ``` r
 install.packages("mapsPERU")
 ```
 
-<H6>
-Note: Version 0.1.3 does not include geographic information at the province level.
-</H6>
-
-or install **mapsPERU** version 1.0.1 with
+or install **mapsPERU** with
 
 ``` r
 library(remotes)
