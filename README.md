@@ -124,11 +124,9 @@ library(mapsPERU)
 df <- map_DEP
 
 library(ggplot2)
-library(ggrepel)
 ggplot(df, aes(geometry=geometry)) +
   geom_sf(aes(fill=DEPARTAMENTO)) +
-  geom_text_repel(mapping = aes(coords_x, coords_y, label=DEPARTAMENTO), 
-                  size=3, min.segment.length=0)+
+  geom_text(data=df, aes(coords_x, coords_y, group=NULL, label=DEPARTAMENTO), size=2.5) +
   labs(x="", y="")
 ```
 
@@ -177,11 +175,9 @@ df <- dplyr::filter(df, REGION=="Lima Metropolitana" |
                       REGION=="Lima Provincias" | REGION=="Callao")
 
 library(ggplot2)
-library(ggrepel)
 ggplot(df, aes(geometry=geometry)) +
   geom_sf(aes(fill=REGION)) +
-  geom_text_repel(mapping = aes(coords_x, coords_y, label=REGION), 
-                  size=3, min.segment.length=0)+
+  geom_text(data=df, aes(coords_x, coords_y, group=NULL, label=REGION), size=3) +
   labs(x="", y="")
 ```
 
