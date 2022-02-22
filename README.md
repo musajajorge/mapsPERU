@@ -10,7 +10,6 @@
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 ![LinuxMint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the2-badge&logo=linux-mint&logoColor=white)
 [![CRAN-status](https://www.r-pkg.org/badges/version/mapsPERU)](https://CRAN.R-project.org/package=mapsPERU)
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fmusajajorge%2FmapsPERU)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/mapsPERU?color=yellow)](https://CRAN.R-project.org/package=mapsPERU)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5758269.svg)](https://doi.org/10.5281/zenodo.5758269)
 
