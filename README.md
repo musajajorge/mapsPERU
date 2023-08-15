@@ -267,6 +267,27 @@ ggplot(df, aes(geometry=geometry)) +
 
 <img src="imgs/ex_map_dist_1.png" width="100%" />
 
+### Use the natural region information on a district level map.
+
+``` r
+library(mapsPERU)
+df <- map_DIST
+
+df$REGION_NATURAL <- ordered(df$REGION_NATURAL, levels=c("Costa","Sierra","Selva"))
+
+colores <- c('#F1C40F','#D35400','#229954')
+
+library(sf)
+library(ggplot2)
+
+ggplot(df, aes(geometry=geometry)) +
+  scale_fill_manual(values=colores) +
+  geom_sf(aes(fill=REGION_NATURAL)) +
+  labs(fill='Región natural')
+```
+
+<img src="imgs/ex_map_dist_2.png" width="100%" />
+
 ------------
 
 <p align="center">
