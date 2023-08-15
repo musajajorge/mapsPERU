@@ -107,6 +107,7 @@ library(mapsPERU)
 df <- map_DEP
 
 library(ggplot2)
+library(sf)
 ggplot(df, aes(geometry=geometry)) +
   geom_sf(aes(fill=DEPARTAMENTO))
 ```
@@ -124,6 +125,7 @@ library(mapsPERU)
 df <- map_DEP
 
 library(ggplot2)
+library(sf)
 ggplot(df, aes(geometry=geometry)) +
   geom_sf(aes(fill=DEPARTAMENTO)) +
   geom_text(data=df, aes(coords_x, coords_y, group=NULL, label=DEPARTAMENTO), size=2.5) +
