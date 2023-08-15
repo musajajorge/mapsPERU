@@ -89,6 +89,8 @@ Note: Officially there is no codification for regions, only for departments. The
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
 | DISTRITO | chr | District name |
+| NOMBRE_CAPITAL_LEGAL | chr | Capital name |
+| REGION_NATURAL | chr | Natural region |
 | coords_x | dbl | Longitude of the centroid of the district |
 | coords_y | dbl | Latitude of the centroid of the district |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
@@ -173,6 +175,7 @@ df <- dplyr::filter(df, REGION=="Lima Metropolitana" |
                       REGION=="Lima Provincias" | REGION=="Callao")
 
 library(ggplot2)
+library(sf)
 ggplot(df, aes(geometry=geometry)) +
   geom_sf(aes(fill=REGION)) +
   geom_text(data=df, aes(coords_x, coords_y, group=NULL, label=REGION), size=3) +
@@ -246,11 +249,13 @@ df$Pob_Group <- ifelse(df$Cantidad<1000, "Menos de 1,000",
                                      ifelse(df$Cantidad<20000, "Menos de 20,000",
                                             "Más de 20,000"))))
 
+df$Pob_Group <- ifelse(is.na(df$Pob_Group)==T, "No disponible", df$Pob_Group)
+
 df$Pob_Group <- factor(df$Pob_Group, levels=c("Menos de 1,000","Menos de 5,000",
                                               "Menos de 10,000","Menos de 20,000",
-                                              "Más de 20,000"))
+                                              "Más de 20,000","No disponible"))
 
-colores <- c('#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c')
+colores <- c('#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c','#1C2833')
 
 library(ggplot2)
 ggplot(df, aes(geometry=geometry)) +
