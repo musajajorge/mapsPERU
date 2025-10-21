@@ -47,6 +47,7 @@ The datasets included in this package are:
 | --------------- | --------------- | --------------- |
 | COD_REGION | chr | Region code |
 | REGION | chr | Region name |
+| POBLACION_2025 | dbl | Projected population of the region in 2025 |
 | coords_x | dbl | Longitude of the centroid of the region |
 | coords_y | dbl | Latitude of the centroid of the region |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
@@ -59,6 +60,7 @@ Note: Officially there is no codification for regions, only for departments. The
 | --------------- | --------------- | --------------- |
 | COD_DEPARTAMENTO | chr | Department code |
 | DEPARTAMENTO | chr | Department name |
+| POBLACION_2025 | dbl | Projected population of the department in 2025 |
 | coords_x | dbl | Longitude of the centroid of the department |
 | coords_y | dbl | Latitude of the centroid of the department |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
@@ -73,6 +75,7 @@ Note: Officially there is no codification for regions, only for departments. The
 | REGION | chr | Region name |
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
+| POBLACION_2025 | dbl | Projected population of the province in 2025 |
 | coords_x | dbl | Longitude of the centroid of the province |
 | coords_y | dbl | Latitude of the centroid of the province |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
@@ -89,8 +92,8 @@ Note: Officially there is no codification for regions, only for departments. The
 | DEPARTAMENTO | chr | Department name |
 | PROVINCIA | chr | Province name |
 | DISTRITO | chr | District name |
-| NOMBRE_CAPITAL_LEGAL | chr | Capital name |
 | REGION_NATURAL | chr | Natural region |
+| POBLACION_2025 | dbl | Projected population of the district in 2025 |
 | coords_x | dbl | Longitude of the centroid of the district |
 | coords_y | dbl | Latitude of the centroid of the district |
 | geometry | MULTIPOLYGON | MULTIPOLYGON Geometric object |
