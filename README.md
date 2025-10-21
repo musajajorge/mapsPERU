@@ -147,23 +147,11 @@ In this example, we are going to plot the average cost per student (ACPS) in uni
 library(mapsPERU)
 df <- map_REG
 
-REGION <- c('Amazonas','Áncash','Apurímac','Arequipa','Ayacucho','Cajamarca','Callao',
-            'Cusco','Huancavelica','Huánuco','Ica','Junín','La Libertad','Lambayeque',
-            'Lima Metropolitana','Lima Provincias','Loreto','Madre de Dios','Moquegua',
-            'Pasco','Piura','Puno','San Martín','Tacna','Tumbes','Ucayali')
-ACPS <- c(12364,7001,8615,10302,5015,8632,7507,7909,6843,8412,6950,7182,8363,5941,10595, 
-          6742,8250,6888,31287,7630,12647,7282,10512,8017,11454,6998)
-ACPS <- data.frame(cbind(REGION,ACPS)) 
-ACPS$ACPS <- as.numeric(ACPS$ACPS)
-
-library(dplyr)
-library(sf)
-df <- left_join(df, ACPS, by="REGION")
-
 library(ggplot2)
+library(sf)
 ggplot(df, aes(geometry=geometry)) +
-  geom_sf(aes(fill=ACPS)) +
-  scale_fill_gradient (low="mediumblue", high="red3")
+  geom_sf(aes(fill=POBLACION_2025/1000000)) +
+  scale_fill_gradient (low="#abd9e9", high="#c51b7d", name="Población 2025 (millones)")
 ```
 
 <img src="imgs/ex_map_reg_1.png" width="100%" />
@@ -183,7 +171,7 @@ library(ggplot2)
 library(sf)
 ggplot(df, aes(geometry=geometry)) +
   geom_sf(aes(fill=REGION)) +
-  geom_text(data=df, aes(coords_x, coords_y, group=NULL, label=REGION), size=3) +
+  geom_text(aes(coords_x, coords_y, group=NULL, label=REGION), size=3) +
   labs(x="", y="")
 ```
 
@@ -195,29 +183,15 @@ ggplot(df, aes(geometry=geometry)) +
 library(mapsPERU)
 df <- map_PROV
 
-library(readxl)
-url <- "https://zenodo.org/record/5646444/files/POBLACION_INEI_2021.xlsx?download=1"
-destfile <- "POBLACION_INEI_2021.xlsx"
-curl::curl_download(url, destfile)
-pob <- read_excel(destfile)
-
-library(dplyr)
-pob_prov <- pob %>%
-  group_by(COD_PROVINCIA) %>%
-  summarise(Población = sum(Cantidad))
-
-library(dplyr)
-library(sf)
-df <- left_join(df, pob_prov, by="COD_PROVINCIA")
-
-df$Categoría <- cut(df$Población, right=F, breaks=c(0,100000,500000,1000000,Inf),
-                    labels=c("Menos a 100 mil personas",
-                             "Menos de 500 mil personas",
-                             "Más de 500 mil personas",
-                             "Más de 1 millón de personas"))
+df$Categoría <- cut(df$POBLACION_2025, right=F, breaks=c(0,100000,500000,1000000,Inf),
+                    labels=c("[ 0 - 100 mil >",
+                             "[ 100 mil - 500 mil >",
+                             "[ 500 mil - 1 millón >",
+                             "[ 1 millón - ∞ >"))
 
 colores <- c('#feebe2','#fbb4b9','#f768a1','#ae017e')
 
+library(sf)
 library(ggplot2)
 ggplot(df, aes(geometry=geometry)) +
   scale_fill_manual(values=colores)+
@@ -233,39 +207,20 @@ ggplot(df, aes(geometry=geometry)) +
 library(mapsPERU)
 df <- map_DIST
 
-library(readxl)
-url <- "https://zenodo.org/record/5646444/files/POBLACION_INEI_2021.xlsx?download=1"
-destfile <- "POBLACION_INEI_2021.xlsx"
-curl::curl_download(url, destfile)
-pob <- read_excel(destfile)
+df$Categoría <- cut(df$POBLACION_2025, right=F, breaks=c(0,1000,5000,10000,20000,Inf),
+                    labels=c("[ 0 - 1000 >",
+                             "[ 1000 - 5000 >",
+                             "[ 5000 - 10000 >",
+                             "[ 10000 - 20000 >",
+                             "[ 20000 - ∞ >"))
 
-library(dplyr)
-pob_dist <- pob %>%
-  group_by(COD_DISTRITO) %>%
-  summarise(Cantidad = sum(Cantidad))
+colores <- c('#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c')
 
-library(dplyr)
 library(sf)
-df <- left_join(df, pob_dist, by="COD_DISTRITO")
-
-df$Pob_Group <- ifelse(df$Cantidad<1000, "Menos de 1,000",
-                       ifelse(df$Cantidad<5000, "Menos de 5,000",
-                              ifelse(df$Cantidad<10000, "Menos de 10,000",
-                                     ifelse(df$Cantidad<20000, "Menos de 20,000",
-                                            "Más de 20,000"))))
-
-df$Pob_Group <- ifelse(is.na(df$Pob_Group)==T, "No disponible", df$Pob_Group)
-
-df$Pob_Group <- factor(df$Pob_Group, levels=c("Menos de 1,000","Menos de 5,000",
-                                              "Menos de 10,000","Menos de 20,000",
-                                              "Más de 20,000","No disponible"))
-
-colores <- c('#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c','#1C2833')
-
 library(ggplot2)
 ggplot(df, aes(geometry=geometry)) +
   scale_fill_manual(values=colores)+
-  geom_sf(aes(fill=Pob_Group))
+  geom_sf(aes(fill=Categoría))
 ```
 
 <img src="imgs/ex_map_dist_1.png" width="100%" />
@@ -282,7 +237,6 @@ colores <- c('#F1C40F','#D35400','#229954')
 
 library(sf)
 library(ggplot2)
-
 ggplot(df, aes(geometry=geometry)) +
   scale_fill_manual(values=colores) +
   geom_sf(aes(fill=REGION_NATURAL)) +
