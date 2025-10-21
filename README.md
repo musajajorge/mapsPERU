@@ -141,7 +141,7 @@ ggplot(df, aes(geometry=geometry)) +
 
 The centroids dataset not only provides the longitudes and latitudes of each region but also includes the geometry field, which is a multipolygon that will allow us to plot numerical variables on our map.
 
-In this example, we are going to plot the average cost per student (ACPS) in university higher education in the year 2020.
+In this example, we will graph the projected population by region for the year 2025.
 
 ``` r
 library(mapsPERU)
