@@ -11,6 +11,10 @@
 [![CRAN-status](https://www.r-pkg.org/badges/version/mapsPERU)](https://CRAN.R-project.org/package=mapsPERU)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/mapsPERU?color=yellow)](https://CRAN.R-project.org/package=mapsPERU)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17408542.svg)](https://doi.org/10.5281/zenodo.17408542)
+![made-with-R](https://img.shields.io/badge/Made%20with-R-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![R-CMD-check](https://github.com/musajajorge/mapsPERU/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/musajajorge/mapsPERU/actions/workflows/R-CMD-check.yaml)
+
 
 <!-- badges: end -->
 
